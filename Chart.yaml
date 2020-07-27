@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v2
 description: A Helm chart for Kubernetes
 icon: https://www.php.net/images/logos/new-php-logo.png
 name: sample-php
