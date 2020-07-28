@@ -3,3 +3,7 @@ description: A Helm chart for Kubernetes
 icon: https://www.php.net/images/logos/new-php-logo.png
 name: sample-php
 version: 1.0.2
+dependencies:
+  - name: php-nginx
+    version: 1.0.1
+    repository: https://javierfiorina.github.io/helm-repo

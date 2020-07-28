@@ -1,4 +1,0 @@
-dependencies:
-- name: php-nginx
-  version: 1.0.1
-  repository: https://javierfiorina.github.io/helm-repo
