@@ -1,23 +1,24 @@
-replicaCount: 1
-image:
-  repository: javierjafio/sample-php
-  tag: v1.0.32
-  pullPolicy: IfNotPresent
-ports:
-  php: 9000
-  nginx: 8080
-service:
-  name: nginx
-ingress:
-  enabled: false
-  hosts:
-  - sample-dev.apps.barberbooks.com
-  annotations: null
-  tls: null
-resources:
-  limits:
-    cpu: 100m
-    memory: 128Mi
-  requests:
-    cpu: 100m
-    memory: 128Mi
+php-nginx:
+  replicaCount: 1
+  image:
+    repository: javierjafio/sample-php
+    tag: v1.0.32
+    pullPolicy: IfNotPresent
+  ports:
+    php: 9000
+    nginx: 8080
+  service:
+    name: nginx
+  ingress:
+    enabled: false
+    hosts:
+    - sample-dev.apps.barberbooks.com
+    annotations: null
+    tls: null
+  resources:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
