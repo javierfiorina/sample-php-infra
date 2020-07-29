@@ -1,9 +1,12 @@
 php-nginx:
   replicaCount: 1
   image:
-    repository: javierjafio/sample-php
-    tag: v1.0.43
-    pullPolicy: IfNotPresent
+    php:
+      repository: ""
+      tag: 0.1.0
+    nginx:
+      repository: "bitnami/nginx"
+      tag: 1.19.1
   ports:
     php: 9000
     nginx: 8080
@@ -11,8 +14,7 @@ php-nginx:
     name: nginx
   ingress:
     enabled: false
-    hosts:
-    - sample-dev.apps.barberbooks.com
+    hosts: {}
     annotations: null
     tls: null
   resources:
