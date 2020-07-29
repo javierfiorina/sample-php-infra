@@ -3,9 +3,9 @@ php-nginx:
   image:
     php:
       repository: "javierjafio/sample-php"
-      tag: 0.1.0
+      tag: v1.0.45
     nginx:
-      repository: "bitnami/nginx"
+      repository: bitnami/nginx
       tag: 1.19.1
   ports:
     php: 9000
