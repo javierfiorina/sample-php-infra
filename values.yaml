@@ -13,16 +13,9 @@ php-nginx:
   service:
     name: nginx
   ingress:
-    enabled: true
-    hosts:
-     - sample-php-1.apps.barberbooks.com
-    annotations:
-      kubernetes.io/ingress.class: nginx
-      kubernetes.io/tls-acme: 'true'
-      nginx.ingress.kubernetes.io/backend-protocol: HTTP
-      nginx.ingress.kubernetes.io/ssl-passthrough: 'true'
+    enabled: false
     tls: 
-     enabled: true
+     enabled: false
   resources:
     limits:
       cpu: 100m
