@@ -2,10 +2,10 @@ php-nginx:
   replicaCount: 1
   image:
     php:
-      repository: ""
-      tag: 0.1.0
+      repository: ''
+      tag: v1.0.45
     nginx:
-      repository: "bitnami/nginx"
+      repository: bitnami/nginx
       tag: 1.19.1
   ports:
     php: 9000
