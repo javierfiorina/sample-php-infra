@@ -1,7 +1,7 @@
 apiVersion: v2
 description: A Helm chart for Kubernetes
 icon: https://www.php.net/images/logos/new-php-logo.png
-name: sample-php
+name: sample-php-1
 version: 1.0.2
 dependencies:
   - name: php-nginx
