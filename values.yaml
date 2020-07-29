@@ -2,7 +2,7 @@ php-nginx:
   replicaCount: 1
   image:
     php:
-      repository: ""
+      repository: "javierjafio/sample-php"
       tag: 0.1.0
     nginx:
       repository: "bitnami/nginx"
@@ -16,7 +16,8 @@ php-nginx:
     enabled: false
     hosts: {}
     annotations: null
-    tls: null
+    tls: 
+     enabled: false
   resources:
     limits:
       cpu: 100m
