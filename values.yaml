@@ -2,7 +2,7 @@ php-nginx:
   replicaCount: 1
   image:
     repository: javierjafio/sample-php
-    tag: v1.0.43
+    tag: v1.0.44
     pullPolicy: IfNotPresent
   ports:
     php: 9000
