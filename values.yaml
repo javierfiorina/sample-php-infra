@@ -2,8 +2,8 @@ php-nginx:
   replicaCount: 1
   image:
     php:
-      repository: "javierjafio/sample-php"
-      tag: v1.0.45
+      repository: javierjafio/sample-php
+      tag: 1.1.21
     nginx:
       repository: bitnami/nginx
       tag: 1.19.1
@@ -14,8 +14,8 @@ php-nginx:
     name: nginx
   ingress:
     enabled: false
-    tls: 
-     enabled: false
+    tls:
+      enabled: false
   resources:
     limits:
       cpu: 100m
